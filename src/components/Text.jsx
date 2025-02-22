@@ -130,10 +130,6 @@ export default function Text() {
 
               <small className="message-lang">Language: {msg.detectedLanguage}</small>
 
-              
-
-              {msg.summarizedText && <p>Summary: {msg.summarizedText}</p>}
-
               <div >
                 <select
                   onChange={(e) => handleLanguageChange(index, e.target.value)}
@@ -155,6 +151,7 @@ export default function Text() {
               </div>
 
               {msg.translatedText && <p className="ai-message">Translated: {msg.translatedText}</p>}
+              {msg.summarizedText && <p>Summary: {msg.summarizedText}</p>}
             </div>
           ))
         )}
