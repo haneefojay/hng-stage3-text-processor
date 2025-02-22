@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "/src/App.css"
-
+import Bot from "/src/assets/bot-regular-24.png"
 export default function Text() {
   const [inputText, setInputText] = useState("");
   const [messages, setMessages] = useState([]);
@@ -111,13 +111,13 @@ export default function Text() {
   return (
     <div className="chat-container">
       <header className="header">
-        <img src="/src/assets/bot-regular-24.png" />
+        <img src={Bot} />
         <h2>LinguaPro</h2>
       </header>
       <div className="chat-window">
         {messages.length === 0 ? (
           <div className="welcome-message">
-            <img src="/src/assets/bot-regular-24.png" alt="Welcome" />
+            <img src={Bot} alt="Welcome" />
             <h3>Welcome to LinguaPro!</h3>
             <p>Start typing to detect language, translate, or get summaries.</p>
           </div>
