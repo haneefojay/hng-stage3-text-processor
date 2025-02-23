@@ -11,7 +11,7 @@ const ChromeFlagsBanner = () => {
       <p>
         ⚠️ <strong>Important:</strong> This application requires Chrome's AI APIs.
         Please enable <strong>Experimental Web Platform features</strong> in Chrome Flags.
-        <a href="chrome://flags" target="_blank" rel="noopener noreferrer">
+        <a href="chrome://flags" target="_blank">
           Open Chrome Flags
         </a>
       </p>
