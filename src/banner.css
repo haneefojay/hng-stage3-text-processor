@@ -1,0 +1,29 @@
+.banner {
+  background-color: #ffeb3b;
+  color: #333;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #fbc02d;
+  font-size: 14px;
+}
+
+.banner a {
+  color: #d84315;
+  font-weight: bold;
+  margin-left: 5px;
+  text-decoration: none;
+}
+
+.banner a:hover {
+  text-decoration: underline;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #333;
+}
