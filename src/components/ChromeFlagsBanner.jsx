@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "/src/banner.css/";
 
 const ChromeFlagsBanner = () => {
   const [visible, setVisible] = useState(true);
