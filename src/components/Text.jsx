@@ -1,5 +1,6 @@
 import { useState } from "react";
-import "/src/App.css"
+import "/src/App.css";
+import ChromeFlagsBanner from "./ChromeFlagsBanner.jsx"
 import Bot from "/src/assets/bot-regular-24.png"
 export default function Text() {
   const [inputText, setInputText] = useState("");
@@ -110,6 +111,7 @@ export default function Text() {
 
   return (
     <div className="chat-container">
+      <ChromeFlagsBanner />
       <header className="header">
         <img src={Bot} />
         <h2>LinguaPro</h2>
