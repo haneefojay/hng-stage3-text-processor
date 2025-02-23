@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "/src/banner.css/";
+import "/src/banner.css";
 
 const ChromeFlagsBanner = () => {
   const [visible, setVisible] = useState(true);
@@ -9,11 +9,9 @@ const ChromeFlagsBanner = () => {
   return (
     <div className="banner">
       <p>
-        ⚠️ <strong>Important:</strong> This application requires Chrome's AI APIs.
-        Please enable <strong>Experimental Web Platform features</strong> in Chrome Flags.
-        <a href="chrome://flags" target="_blank">
-          Open Chrome Flags
-        </a>
+        ⚠️ <strong>Important:</strong> This app requires Chrome's AI APIs.
+        To enable them, open a new tab and go to <code>chrome://flags</code>, 
+        then search for <strong>Experimental Web Platform features</strong> and enable it.
       </p>
       <button className="close-btn" onClick={() => setVisible(false)}>✖</button>
     </div>
@@ -21,4 +19,3 @@ const ChromeFlagsBanner = () => {
 };
 
 export default ChromeFlagsBanner;
-
